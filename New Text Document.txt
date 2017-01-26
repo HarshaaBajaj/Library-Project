@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Advertisment</title>
+</head>
+<body>
+<marquee direction="up"><img src="s1.jpg"></marquee>
+<marquee direction="up"><img src="s2.jpg"></marquee>
+<marquee direction="up"><img src="s3.jpg"></marquee>
+<marquee direction="up"><img src="s4.jpg"></marquee>
+<marquee direction="up"><img src="s5.jpg"></marquee>
+<marquee direction="up"><img src="s6.jpg"></marquee>
+<marquee direction="up"><img src="s7.jpg"></marquee>
+<marquee direction="up"><img src="s8.jpg"></marquee>
+<marquee direction="up"><img src="s9.jpg"></marquee>
+
+</body>
+</html>

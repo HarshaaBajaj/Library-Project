@@ -1,0 +1,104 @@
+<head>
+<title>REGISTER</title>
+<script type="text/javascript">
+function validation_for_signup()
+{
+
+                var check_mid = /^[0-9]{3,16}$/;
+	        var check_mname = /^[a-zA-Z0-9_]{3,16}$/;
+                var check_branch = /^[a-zA-Z]{3,16}$/;
+                                if(document.signup.mid.value=="")
+                                {
+                                                alert("please enter mid");
+                                                document.signup.mid.focus();
+                                                return false;
+                                }
+                                else if(check_mid.test(document.signup.mid.value) == false)
+                                {
+                                                alert('Invalid  mem id');
+                                                document.signup.mid.focus();
+                                                return false;
+                                }
+                                if(document.signup.mname.value=="")
+                                {
+                                                alert("please mem name");
+                                                document.signup.mname.focus();
+                                                return false;
+                                }
+                                else if(check_mname.test(document.signup.mname.value) == false)
+                                {
+                                                alert('Invalid  mem name');
+                                                document.signup.mname.focus();
+                                                return false;
+                                }
+                                if(document.signup.password.value=='')
+                                {
+                                                alert("Please enter Password.");
+                                                document.signup.password.focus();
+                                                return false;
+                                }
+                                else if(document.signup.password.value.length<6)
+                                {
+                                                alert("Password is too short.");
+                                                document.signup.password.focus();
+                                                return false;
+                                }
+                                if(document.signup.passconf.value=='')
+                                {
+                                                alert("Please confirm Password.");
+                                                document.signup.passconf.focus();
+                                                return false;
+                                }
+                                else if(document.signup.password.value!=document.signup.passconf.value)
+                                {
+                                                alert("Password does not match.");
+                                                document.signup.password.focus();
+                                                return false;
+                                }
+				if(document.signup.branch.value=="")
+                                {
+                                                alert("please enter branch");
+                                                document.signup.branch.focus();
+                                                return false;
+                                }
+                                else if(check_branch.test(document.signup.branch.value) == false)
+                                {
+                                                alert('Invalid  branch');
+                                                document.signup.branch.focus();
+                                                return false;
+                                }
+                               
+                                }
+
+
+</script>
+</head>
+
+<html>
+<body bgcolor="#B0F2EA">
+<center>
+<h1>REGISTER</h1>
+
+<form name="signup" action="registration.jsp" onSubmit="return validation_for_signup()" method="post">
+
+
+<p>&nbsp;</p>
+
+<p>Member Id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="mid"  value="" size="50" /></p>
+
+<p>Member Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="mname"  value="" size="50" /></p>
+
+
+<p>Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="password"  value="" size="50" /></p>
+
+<p>Password Confirm:&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name="passconf"  value="" size="50" /></p>
+
+<p>Branch:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="branch"  value="" size="50" /></p>
+
+<p><input type="submit" value="Submit" /></p>
+
+</center>
+</form>
+
+</body>
+</html>

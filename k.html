@@ -1,0 +1,184 @@
+<html>
+<marquee behavior="scroll" direction="down">
+<img src="a1.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee></script>
+</center>
+
+
+
+<center>
+<script language="JavaScript1.1">
+
+
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+
+</script>
+</head>
+<body>
+<a href="javascript:gotoshow()"></a>
+<script>
+
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("z1.jpg","z3.jpg","z4.jpg","z5.jpg")
+slideshowlinks("http://food.epicurious.com/run/recipe/view?id=13285","http://food.epicurious.com/run/recipe/view?id=10092","http://food.epicurious.com/run/recipe/view?id=100975","http://food.epicurious.com/run/recipe/view?id=2876","http://food.epicurious.com/run/recipe/view?id=20010")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=2000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+
+</script>
+</center>
+</body>
+ <marquee behavior="scroll" direction="up">
+<img src="s1.jpg" width="200" height="50" direction="up" /></marquee>
+<marquee behavior="scroll" direction="down">
+<img src="a1.jpg" width="200" height="50" direction="down" /><br></br></marquee>
+<marquee behavior="scroll" direction="up"><marquee behavior="scroll" direction="down">
+<img src="a1.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<img src="s2.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s3.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee><marquee behavior="scroll" direction="down">
+<img src="a1.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marqee>
+<marquee behavior="scroll" direction="up">
+<img src="s4.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s5.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s6.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s7.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s8.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s9.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br>
+</marquee>
+
+<marquee behavior="scroll" direction="up">
+<img src="s1.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s2.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s3.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s4.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s5.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s6.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s7.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s8.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s9.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br>
+</marquee>
+
+</script>
+</right>
+</body>
+ <marquee behavior="scroll" direction="up">
+<img src="s1.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee><marquee behavior="scroll" direction="down">
+<img src="a1.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<marquee behavior="scroll" direction="up"><marquee behavior="scroll" direction="down">
+<img src="a1.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<img src="s2.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s3.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee><marquee behavior="scroll" direction="down">
+<img src="a1.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marqee>
+<marquee behavior="scroll" direction="up">
+<img src="s4.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s5.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s6.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s7.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s8.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s9.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br>
+</marquee>
+
+<marquee behavior="scroll" direction="up">
+<img src="s1.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s2.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s3.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s4.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s5.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s6.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s7.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s8.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br></marquee>
+<marquee behavior="scroll" direction="up">
+<img src="s9.jpg" width="200" height="200" alt="Arrow pointing up" /><br></br>
+</marquee>
+
+
+
+
+<align=right>
+<right><marquee behavior="scroll" direction="down">
+<img src="a1.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee></right>
+<marquee behavior="scroll" direction="down">
+<img src="a2.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<marquee behavior="scroll" direction="down">
+<img src="a3.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<marquee behavior="scroll" direction="down">
+<img src="a4.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<marquee behavior="scroll" direction="down">
+<img src="a5.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<marquee behavior="scroll" direction="down">
+<img src="a6.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<marquee behavior="scroll" direction="down">
+<img src="a7.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<marquee behavior="scroll" direction="down">
+<img src="a8.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+<marquee behavior="scroll" direction="down">
+<img src="a9.jpg" width="200" height="200" alt="Arrow pointing down" /><br></br></marquee>
+</marquee>
+</right>
+
+</html>
